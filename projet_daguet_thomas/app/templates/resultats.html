@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+
+<head>
+	<title>Page de connexion</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="static/form.css">
+</head>
+
+<body>
+    <div class="haut_page">
+        <p class="haut_page">
+          DAGUET Thomas - EPISEN - ITS 2
+        </p>
+        <img src="static/img_avatar2.png" alt="Avatar" class="avatar">
+        <form action="/informations" method="post">
+        	<button class = b_up type="submit">Informations</button>
+        </form>	
+        <form action="/info_user" method="post">
+       		<button class = b_up type="submit">Données personnelles</button>
+        </form>  
+    </div>
+    <div class = "bas_page_resultats">   
+        <h1>Liste des résulats</h1>
+    </div> 
+    <div>
+      <iframe name = "pdf" width="800px" height="1100" style = "border-style: none"></iframe>
+    </div>
+
+</body>
+  <script type="text/javascript">
+    var list_pdf = {{pdf|safe}}; 
+    for (i=0; i < {{nbfile}}; i++) {
+      var list = document.createElement("li"); 
+      list.style.listStyleType = "none";
+      list.style.paddingLeft = 0;
+      list.style.paddingTop = "20px";
+      var addli = document.getElementsByClassName('bas_page_resultats')[0];
+      addli.appendChild(list);
+      var button = document.createElement("a");
+      button.innerHTML = "Lien numéro " + (i+1);
+      button.style.backgroundColor = "#FFFFFF";
+      button.style.width = "100px";
+      button.style.fontSize = "20px";
+      button.setAttribute("target", "pdf");
+      button.href = list_pdf[i];
+      var addlink = document.getElementsByTagName("li")[i];
+      addlink.appendChild(button);
+    };
+  </script>   

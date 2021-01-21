@@ -1,0 +1,93 @@
+ <!DOCTYPE html>
+<head>
+  <title>Inscription</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="static/form.css">
+</head>
+
+
+<body classe = "contenu">
+  <section id = "encadre">
+    <div class="haut_page">
+        <p class="haut_page">
+          DAGUET Thomas - EPISEN - ITS 2   
+        </p>  
+        <img src="static/img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+     <div class="bas_page_inscription">
+      <form action="/inscription" method="post">
+          <h1>Renseignez les champs pour vous inscrire</h1>
+          
+          <div class="container">
+            <label for="psw"><b>Numéro sécurité sociale</b></label>
+            <input type="text" placeholder="Entrez votre ID" name="numero" required>  
+          </div>
+
+          <div class="container">
+            <label for="psw"><b>Nom</b></label>
+            <input type="text" placeholder="Entrez votre nom" name="nom" required>  
+          </div>
+
+          <div class="container">
+            <label for="psw"><b>Prénom</b></label>
+            <input type="text" placeholder="Entrez votre prénom" name="prenom" required>  
+          </div>
+
+          <div class="container">
+            <label for="psw"><b>Date de naissance</b></label>
+            <input type="text" placeholder="Entrez votre date de naissance" name="date_n" required>  
+          </div>
+
+          <div class="container">
+            <label for="psw"><b>Lieu de naissance</b></label>
+          <input type="text" placeholder="Entrez votre lieu de naissance" name="lieu_n" required>  
+          </div>    
+
+          <div class="container">
+            <label for="psw"><b>Adresse</b></label>
+            <input type="text" placeholder="Entrez votre Adresse" name="adresse" required>  
+          </div>
+
+          <div class="container">
+            <label for="psw"><b>Code postal</b></label>
+            <input type="text" placeholder="Entrez votre code Postal" name="code_p" required>  
+          </div>
+
+          <div class="container">
+            <label for="psw"><b>Téléphone</b></label>
+            <input type="text" placeholder="Entrez votre N° de téléphone" name="telephone" required>  
+          </div>  
+
+          <div class="container">
+            <label for="psw"><b>Adresse Email</b></label>
+            <input type="text" placeholder="Entrez votre Adresse Email" name="mail" required>  
+          </div>
+
+          <div class="container">
+            <label for="uname"><b>Identifiant</b></label>
+            <input type="text" placeholder="Entrez votre identifiant" name="identifiant" required>
+          </div>
+
+          <div class="container">
+            <label for="psw"><b>Mot de passe</b></label>
+            <input type="password" placeholder="Entrez votre mot de passe" name="password" required>
+         </div>
+
+          <div class="container">
+            <label for="psw"><b>Confirmation mot de passe</b></label>
+            <input type="password" placeholder="Confirmez votre mot de passe" name="password_2" required>
+        <div class="container"> 
+          <button type="text">Inscription</button>
+        </div> 
+      </form>
+          <form action="/retour" method="post">
+      <section id = "retour">
+          <div class="container"> 
+            <button type="text">Retour</button>
+          </div> 
+      </section>  
+    </form>
+      <p class ="alert"> {{ alert }} </p> 
+    </div>
+    </section>
+</body>

@@ -1,0 +1,46 @@
+
+ <!DOCTYPE html>
+
+<head>
+	<title>Page de connexion</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../static/form.css">
+</head>
+
+<body>
+
+    <div class="haut_page">
+        <p class="haut_page">
+          DAGUET Thomas - EPISEN - ITS 2
+        </p>
+        <img src="static/img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+    <div class = "bas_page_login">
+        <form action="/connexion" method="post">
+        	<form action="resultat.html" method="post">
+          	<div class="container">
+            	<label for="uname"><b>Identifiant</b></label> 
+          	</div>
+          	<div class="container">
+          		<input type="text" placeholder="Entrez votre identifiant" name="identifiant" required>
+          	</div>
+          	<div class="container">
+          	 	<label for="psw"><b>Mot de passe</b></label>
+          	</div>
+
+           	<div class="container"> 
+             	<input type="password" placeholder="Entrez votre mot de passe" name="password" required>
+           	</div>
+           	<div class="container"> 
+           		<button type="submit">Connexion</button>
+        	</div>
+        </form>
+        <form action="/page_inscription" method="post">
+            <div class="container"> 
+                <button type="submit">Inscription</button>
+            </div>       
+        </form> 
+        <p class ="alert"> {{ alert }} </p> 
+    </div> 
+
+</body>

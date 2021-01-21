@@ -1,0 +1,150 @@
+/* Bordered form */
+form { 
+  margin: auto;
+}
+
+img {
+  font-size: 100%
+}
+
+p.haut_page {
+  height: 10px;
+  width: 320px;
+}
+
+div.up_buttons {
+  width: 10%;
+  float: right;
+}
+
+body { 
+  margin: 0 auto;
+  font-size: 100%;
+  color: white;
+  background-color: transparent;
+  background-size: 100%;
+  background-image: url("../static/mizu.jpg");
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+a {
+  font-size: 50px;
+}
+
+div.haut_page {
+  border: 3px solid pink;
+  border-width: 10px; 
+  background-image: url("../static/font.jpg");
+  text-align: left;
+  padding-left: 20px;
+}
+
+div.bas_page_login {
+  background-image: url("../static/font.jpg");
+  margin-top: 20px;
+  border: 3px solid pink;
+  border-width: 10px; 
+  margin-left: 800px;
+  margin-right: 800px;
+  background-repeat: no-repeat;
+}
+
+div.bas_page_resultats {
+  background-image: url("../static/font.jpg");
+  margin-top: 20px;
+  border: 3px solid pink;
+  border-width: 10px; 
+  margin-left: 600px;
+  margin-right: 600px;
+}
+
+div.bas_page_info {
+  background-image: url("../static/font.jpg");
+  margin-top: 20px;
+  border: 3px solid pink;
+  border-width: 10px; 
+  margin-left: 700px;
+  margin-right: 700px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+
+div.bas_page_inscription {
+  padding-top: 20px;
+  padding-top-left: 5px;
+  padding-top-right: 5px;
+  background-image: url("../static/font.jpg");
+  margin-top: 30px;
+  border: 3px solid pink;
+  border-width: 10px; 
+  margin-left: 580px;
+  margin-right: 580px;
+
+}
+
+
+/* Full-width inputs */
+input[type=text], input[type=password], label{
+  width:200px;
+  padding: 15px;
+  margin: 0 auto;
+  display: inline-block;
+  border: 5px solid pink;
+  box-align: center;
+  text-align: center;
+  background-color: gray;
+  margin-top: 0;
+  font-size: 12px;
+}
+
+label {
+  background-color: gray;
+  margin: 0 auto;
+  margin-top: 0;
+  font-size: 14px;
+  width:200px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: gray;
+  color: white;
+  font-size: 20px;
+  padding: auto;
+  padding-top: 0;
+  margin: 0 auto;
+  margin-top: 0 auto;
+  cursor: pointer;
+  width:240px;
+  border: 5px solid pink;
+}
+
+button.b_up {
+  margin-left: 85%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 5%;
+  margin-top: 0px;
+  border-radius: 5%;
+  margin-left: 88%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 5px;
+}

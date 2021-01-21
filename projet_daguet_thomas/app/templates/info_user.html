@@ -1,0 +1,78 @@
+ <!DOCTYPE html>
+
+<head>
+	<title>Page de connexion</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="static/form.css">
+</head>
+
+<body>
+    <div class="haut_page">
+        <p class="haut_page">
+          DAGUET Thomas - EPISEN - ITS 2
+        </p>
+        <img src="static/img_avatar2.png" alt="Avatar" class="avatar">
+        <form action="/informations" method="post">
+        	<button class = b_up type="submit">Informations</button>
+        </form>	
+        <form action="/" method="post">
+       		<button class = b_up type="submit">Deconnexion</button>
+        </form>  
+    </div>
+    <div class = "bas_page_resultats">
+        <form action="/modification" method="post">          
+          <h1>Modifiez les champs si vous le désirez</h1>
+          
+          <div class="container">
+            <label for="psw"><b>Numéro sécurité sociale</b></label>
+            <input type="text" value="{{ numero }}" name="numero" required>  
+          </div>
+
+          <div class="container">
+            <label for="psw"><b>Nom</b></label>
+            <input type="text" value="{{ nom }}" name="nom" required>  
+          </div>
+
+          <div class="container">
+            <label for="psw"><b>Prénom</b></label>
+            <input type="text"  value="{{ prenom }}"  name="prenom" required>  
+          </div>
+
+          <div class="container">
+            <label for="psw"><b>Date de naissance</b></label>
+            <input type="text"  value="{{ date_n }}"  name="date_n" required>  
+          </div>
+
+          <div class="container">
+            <label for="psw"><b>Lieu de naissance</b></label>
+          <input type="text"  value="{{ lieu_n }}"  name="lieu_n" required>  
+          </div>    
+
+          <div class="container">
+            <label for="psw"><b>Adresse</b></label>
+            <input type="text"  value="{{ adresse }}"  name="adresse" required>  
+          </div>
+
+          <div class="container">
+            <label for="psw"><b>Code postal</b></label>
+            <input type="text"  value="{{ code_p }}"  name="code_p" required>  
+          </div>
+
+          <div class="container">
+            <label for="psw"><b>Téléphone</b></label>
+            <input type="text"  value="{{ telephone }}"  name="telephone" required>  
+          </div>  
+
+          <div class="container">
+            <label for="psw"><b>Adresse Email</b></label>
+            <input type="text" value="{{ mail }}" name="mail" required>  
+        	</div>
+          <button type="submit">Mise à jour des informations</button>
+        </form>   
+        <form action="/resultats" method="post">
+            <div class="container"> 
+                <button type="submit">Résultats analyses</button>
+            </div>       
+        </form>  
+    </div>  
+</body>
